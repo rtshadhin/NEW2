@@ -55,26 +55,26 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
-    api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি নয়ন তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
-<------------------------------>  
-BOT CONNECTED SUCCESFUL !!! 
+    api.changeNickname(`[ ${global.config.PREFIX} ] • 🥱${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+    return api.sendMessage("I'M COMING BOSS 🐱 জয় বাংলা", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+<-জয় বাংলা জিতবে এইবার ধানের শিশ->  
+BOT CT SUCCESFUL  !!! 
 
-APPROVAL ALLOW IN THIS GROUP!!!
+আমার বস এই গুরুপে কথা বলার জন্য পারমিশন দিছে 🐱!!!
 <------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
 \n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER :Mohammad Nayan 
+DEVELOPER :SHADHIN  
 
-🟣Facebook Account Link: 
+Facebook Account Link সিঙ্গেল মেয়েরা রিকোয়েস্ট দিবা: 
 
-https://www.facebook.com/www.xnxx.com169
+https://www.facebook.com/linkcopymarao
 
-🔵WHATSAPP NUMBER: wa.me/+8801615298449
+Number 01741298129
 
-🟢SUPPORT EMAIL: www.mdmnnm2004@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+😒SUPPORT EMAIL: rtshadhin@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
@@ -106,11 +106,11 @@ https://www.facebook.com/www.xnxx.com169
         let avtAnime = (await axios.get(encodeURI(
           `https://graph.facebook.com/${event.logMessageData.addedParticipants[o].userFbId}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`), { responseType: "arraybuffer" })).data;
         var ok = [
-          'https://i.imgur.com/dDSh0wc.jpeg',
-          'https://i.imgur.com/UucSRWJ.jpeg',
-          'https://i.imgur.com/OYzHKNE.jpeg',
-          'https://i.imgur.com/V5L9dPi.jpeg',
-          'https://i.imgur.com/M7HEAMA.jpeg'
+          'https://i.imgur.com/HlApoGH.jpeg',
+          'https://i.imgur.com/HlApoGH.jpeg',
+          'https://i.imgur.com/HlApoGH.jpeg',
+          'https://i.imgur.com/HlApoGH.jpeg',
+          'https://i.imgur.com/HlApoGH.jpeg'
         ]
         let background = (await axios.get(encodeURI(`${ok[Math.floor(Math.random() * ok.length)]}`), { responseType: "arraybuffer", })).data;
         fs.writeFileSync(pathAva, Buffer.from(avtAnime, "utf-8"));
